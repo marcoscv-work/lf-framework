@@ -376,6 +376,8 @@ template {
   cursor: pointer;
   display: inline-block;
   font-weight: normal;
+  height: 40px;
+  line-height: 20px;
   margin-bottom: 0;
   padding: 8px 14px;
   text-align: center;
@@ -396,21 +398,27 @@ template {
   background-color: #4191D7;
   color: #FFF; }
   .lf-btn-primary:hover, .lf-btn-primary:focus, .lf-btn-primary.focus {
-    background-color: #2877bd; }
+    background-color: #2877bd;
+    color: #FFF;
+    text-decoration: none; }
 
 .lf-btn-secondary {
   border-color: #546D7D;
   background-color: #546D7D;
   color: #FFF; }
   .lf-btn-secondary:hover, .lf-btn-secondary:focus, .lf-btn-secondary.focus {
-    background-color: #40525e; }
+    background-color: #40525e;
+    color: #FFF;
+    text-decoration: none; }
 
 .lf-btn-link {
   border-color: transparent;
   background-color: transparent;
   color: #546D7D; }
   .lf-btn-link:hover, .lf-btn-link:focus, .lf-btn-link.focus {
-    color: #40525e; }
+    color: #40525e;
+    color: #546D7D;
+    text-decoration: none; }
 
 .lf-btn-bottom-left {
   position: fixed;
@@ -507,6 +515,9 @@ template {
   margin-bottom: 24px; }
   .lf-toolbar-header a {
     color: #FFF; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
 
 body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;

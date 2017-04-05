@@ -6,41 +6,135 @@
 </head>
 <body class="has-lf-sidebar">
 
-<div class="lf-sidebar lf-sidebar-inverse">
+	<div class="lf-sidebar lf-sidebar-inverse">
+		<div class="lf-toolbar-header">
+			<div class="lf-toolbar-group-expand-text">
+				Title
+			</div>
+		</div>
+	</div>
+
 	<div class="lf-toolbar-header">
+		<div class="lf-toolbar-group">
+			<div class="lf-toolbar-group-content">
+				<a class="sidenav-toggler monospaced" href="#">
+					<img src="https://cdn4.iconfinder.com/data/icons/web-ui-3/128/Menu-128.png" height="32" width="32" />
+				</a>
+			</div>
+		</div>
+
+		<div class="lf-toolbar-group-right">
+			<div class="lf-toolbar-group-content">
+				<a class="sidenav-toggler monospaced" href="#">
+					<img src="https://cdn4.iconfinder.com/data/icons/web-ui-3/128/Menu-128.png" height="32" width="32" />
+				</a>
+			</div>
+		</div>
+
 		<div class="lf-toolbar-group-expand-text">
-			Title
-		</div>
-	</div>
-</div>
-
-<div class="lf-toolbar-header">
-	<div class="lf-toolbar-group">
-		<div class="lf-toolbar-group-content">
-			<a class="sidenav-toggler monospaced" href="#">
-				<img src="https://cdn4.iconfinder.com/data/icons/web-ui-3/128/Menu-128.png" height="32" width="32" />
-			</a>
+			<span class="lf-toolbar-title" title="Aromatic crema, cinnamon redeye cortado">Aromatic crema, cinnamon redeye cortado</span>
 		</div>
 	</div>
 
-	<div class="lf-toolbar-group-right">
-		<div class="lf-toolbar-group-content">
-			<a class="sidenav-toggler monospaced" href="#">
-				<img src="https://cdn4.iconfinder.com/data/icons/web-ui-3/128/Menu-128.png" height="32" width="32" />
-			</a>
+	<div>
+		<h1>buttons:</h1>
+		<a href="#" class="lf-btn lf-btn-secondary">lf-secondary</a>
+		<a href="#" class="lf-btn lf-btn-primary">lf-primary</a>
+		<a href="#" class="lf-btn lf-btn-link">lf-link</a>
+	</div>
+
+	<div>
+		<h1>frameworks:</h1>
+		<a href="#" id="bs2" class="lf-btn lf-btn-secondary">Load bootstrap 2.3.2</a>
+		<a href="#" id="bs3" class="lf-btn lf-btn-secondary">Load bootstrap 3</a>
+		<a href="#" id="foundation" class="lf-btn lf-btn-secondary">Load foundation</a>
+	</div>
+
+	<hr/>
+
+	<div class="bs2">
+		<h2>Bootstrap 2.3.2 markup</h2>
+		<p>
+		  <button class="btn btn-large btn-primary" type="button">Large button</button>
+		  <button class="btn btn-large" type="button">Large button</button>
+		</p>
+		<p>
+		  <button class="btn btn-primary" type="button">Default button</button>
+		  <button class="btn" type="button">Default button</button>
+		</p>
+		<p>
+		  <button class="btn btn-small btn-primary" type="button">Small button</button>
+		  <button class="btn btn-small" type="button">Small button</button>
+		</p>
+		<p>
+		  <button class="btn btn-mini btn-primary" type="button">Mini button</button>
+		  <button class="btn btn-mini" type="button">Mini button</button>
+		</p>
+	</div>
+
+	<hr/>
+
+	<div class="foundation">
+		<h2>Bootstrao 3.3.6 markup</h2>
+		<p>
+		  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+		  <button type="button" class="btn btn-default btn-lg">Large button</button>
+		</p>
+		<p>
+		  <button type="button" class="btn btn-primary">Default button</button>
+		  <button type="button" class="btn btn-default">Default button</button>
+		</p>
+		<p>
+		  <button type="button" class="btn btn-primary btn-sm">Small button</button>
+		  <button type="button" class="btn btn-default btn-sm">Small button</button>
+		</p>
+		<p>
+		  <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+		  <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+		</p>
+	</div>
+
+	<hr/>
+
+	<div class="foundation">
+		<h2>Foundation markup</h2>
+		<div class="small-6 columns">
+			<a href="#" class="button">Default Button</a>
+		</div>
+		<div class="small-6 columns">
+			<a href="#" class="button success">Success Button</a>
+		</div>
+		<div class="small-6 columns">
+			<a href="#" class="button secondary">Secondary Button</a>
+		</div>
+		<div class="small-6 columns">
+			<a href="#" class="button alert">Alert Button</a>
+		</div>
+		<div class="small-6 columns">
+			<a href="#" class="button info">Info Button</a>
+		</div>
+		<div class="small-6 columns">
+			<a href="#" class="button disabled">Disabled Button</a>
 		</div>
 	</div>
 
-	<div class="lf-toolbar-group-expand-text">
-		<span class="lf-toolbar-title" title="Aromatic crema, cinnamon redeye cortado">Aromatic crema, cinnamon redeye cortado</span>
-	</div>
-</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-<div class="container">
-	<a href="#" class="lf-btn lf-btn-secondary">lf-btn</a>
-	<a href="#" class="lf-btn lf-btn-primary">lf-btn</a>
-	<a href="#" class="lf-btn lf-btn-link">lf-btn</a>
-</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#bs2').click(function() {
+				$('head').append("<link href='https://maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css' type='text/css' rel='stylesheet' />");
+			});
+
+			$('#bs3').click(function() {
+				$('head').append("<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' type='text/css' rel='stylesheet' />");
+			});
+
+			$('#foundation').click(function() {
+				$('head').append("<link href='https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css' type='text/css' rel='stylesheet' />");
+			});
+		});
+	</script>
 
 </body>
 </html>

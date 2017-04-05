@@ -5,6 +5,8 @@
 	cursor: pointer;
 	display: inline-block;
 	font-weight: normal;
+	height: $lf-btn-heigth;
+	line-height: $lf-btn-line-heigth;
 	margin-bottom: 0;
 	padding: $lf-btn-padding;
 	text-align: center;
@@ -32,6 +34,8 @@
 
 	&:hover, &:focus, &.focus {
 		background-color: darken($lf-btn-primary-bg, 10%);
+		color: $lf-btn-primary-color;
+		text-decoration: none;
 	}
 }
 
@@ -42,6 +46,8 @@
 
 	&:hover, &:focus, &.focus {
 		background-color: darken($lf-btn-secondary-bg, 10%);
+		color: $lf-btn-secondary-color;
+		text-decoration: none;
 	}
 }
 
@@ -52,6 +58,8 @@
 
 	&:hover, &:focus, &.focus {
 		color: darken($lf-btn-link-color, 10%);
+		color: $lf-btn-link-color;
+		text-decoration: none;
 	}
 }
 
