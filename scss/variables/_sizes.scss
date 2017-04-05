@@ -1,0 +1,27 @@
+// Base measure is the base of the system to build all components and distances
+
+$base-measure: 4px !default;
+
+// Base measures
+
+$base-border: 1px !default;
+
+$base-border-radius: $base-measure !default;
+
+$base-font-size: $base-measure * 4 !default;
+
+$base-font-size-secondary: $base-measure * 3.5 !default;
+
+$base-grid-space: $base-measure * 3 !default;
+
+$base-grid-space-mobile: $base-measure * 2 !default;
+
+$base-space: $base-measure * 4 !default;
+
+$base-brake-space: $base-measure * 6 !default;
+
+$base-brake-space-mobile: $base-measure * 4 !default;
+
+$base-panel-width: 320px;
+
+$base-bar-height: $base-measure * 14;

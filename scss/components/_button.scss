@@ -1,0 +1,72 @@
+.lf-btn {
+	background-image: none;
+	border-radius: $lf-btn-border-radius;
+	border: 1px solid transparent;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: normal;
+	margin-bottom: 0;
+	padding: $lf-btn-padding;
+	text-align: center;
+	text-decoration: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	&:active, &.active {
+		outline: 0;
+		background-image: none;
+	}
+
+	&.disabled, &[disabled], fieldset[disabled] & {
+		cursor: disabled;
+		opacity: 0.65;
+		box-shadow: none;
+	}
+}
+
+.lf-btn-primary {
+	border-color: $lf-btn-primary-border-color;
+	background-color: $lf-btn-primary-bg;
+	color: $lf-btn-primary-color;
+
+	&:hover, &:focus, &.focus {
+		background-color: darken($lf-btn-primary-bg, 10%);
+	}
+}
+
+.lf-btn-secondary {
+	border-color: $lf-btn-secondary-border-color;
+	background-color: $lf-btn-secondary-bg;
+	color: $lf-btn-secondary-color;
+
+	&:hover, &:focus, &.focus {
+		background-color: darken($lf-btn-secondary-bg, 10%);
+	}
+}
+
+.lf-btn-link {
+	border-color: $lf-btn-link-border-color;
+	background-color: $lf-btn-link-bg;
+	color: $lf-btn-link-color;
+
+	&:hover, &:focus, &.focus {
+		color: darken($lf-btn-link-color, 10%);
+	}
+}
+
+.lf-btn-bottom-left {
+	@include position(fixed, null null 0 0);
+}
+
+.lf-btn-bottom-right {
+	@include position(fixed, null 0 0 null);
+}
+
+.lf-btn-top-left {
+	@include position(fixed, 0 null null 0);
+}
+
+.lf-btn-top-right {
+	@include position(fixed, 0 0 null null);
+}

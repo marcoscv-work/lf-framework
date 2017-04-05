@@ -1,0 +1,5 @@
+.monospaced {
+	display: block;
+
+	@include size($base-measure * 8);
+}

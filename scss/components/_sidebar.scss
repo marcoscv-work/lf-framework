@@ -1,0 +1,15 @@
+.has-lf-sidebar {
+	margin-left: $base-panel-width;
+}
+
+.lf-sidebar {
+	background-color: $brand-light;
+	width: $base-panel-width;
+
+	@include position(fixed, 0 null 0 0);
+}
+
+.lf-sidebar-inverse {
+	background-color: $lf-sidebar-default-bg;
+	color: $brand-light;
+}

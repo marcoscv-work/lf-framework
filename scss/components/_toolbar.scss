@@ -1,0 +1,71 @@
+.lf-toolbar-group {
+	float: left;
+}
+
+.lf-toolbar-group-right {
+	float: right;
+}
+
+.lf-toolbar-group-expand {
+	.input-group {
+		width: 100%;
+	}
+
+	.lf-toolbar-group-content:only-child {
+		width: 1%;
+	}
+
+	.lf-toolbar-group-content {
+		max-width: 100px;
+		min-width: 100px;
+
+		.truncate-text {
+			left: $base-measure \9; // IE9
+			position: absolute \9; // IE9
+			right: $base-measure \9; // IE9
+
+			-ms-transform: translateY(-50%); // IE9
+		}
+	}
+}
+
+.lf-toolbar-group,
+.lf-toolbar-group-right,
+.lf-toolbar-group-expand {
+	display: table;
+	height: $lf-toolbar-group-height;
+}
+
+.lf-toolbar-group-expand-text {
+	line-height: $lf-toolbar-group-height;
+	text-align: center;
+
+	@include text-overflow();
+}
+
+.lf-toolbar-group-content {
+	display: table-cell;
+	padding-left: $base-measure;
+	padding-right: $base-measure;
+	position: relative;
+	vertical-align: middle;
+}
+
+.lf-toolbar-group-field {
+	display: table-cell;
+	padding-left: $base-measure;
+	padding-right: $base-measure;
+	position: relative;
+	vertical-align: middle;
+	width: 1%;
+}
+
+.lf-toolbar-header {
+	background-color: $brand-inverse;
+	color: $brand-light;
+	margin-bottom: $base-measure * 6;
+
+	a {
+		color: $brand-light;
+	}
+}
